@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/rone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One"
+            android:onClick="checkButton"
+            tools:ignore="OnClick"
+            android:textSize="40dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two"
+            android:onClick="checkButton"
+            tools:ignore="OnClick"
+            android:textSize="40dp"/>
+        <RadioButton
+            android:id="@+id/rthree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Three"
+            android:onClick="checkButton"
+            tools:ignore="OnClick"
+            android:textSize="40dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tselected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Selection: "
+        android:textSize="20sp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="160dp"
+        />
+    <Button
+        android:id="@+id/bapply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550sp"/>
+
+</RelativeLayout>
